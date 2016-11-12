@@ -1,0 +1,8 @@
+version: '2'
+services:
+  jadr/docker-playgrounds-java:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/target
