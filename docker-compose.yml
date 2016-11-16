@@ -1,8 +1,9 @@
 version: '2'
 services:
-  docker-playgrounds-java:
+  web:
     build: .
     ports:
       - "8080:8080"
     volumes:
-      - .:/target
+      - ./target:/target
+    command: "pwd"
